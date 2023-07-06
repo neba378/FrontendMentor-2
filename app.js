@@ -1,3 +1,4 @@
+$(".thanks-box").hide();
 $("input").focusin(function () {
   $(this).css("background-color", "#deddeb");
 });
@@ -5,7 +6,7 @@ $("input").focusin(function () {
 $("input").focusout(function () {
   $(this).css("background-color", "#ffffff");
 });
-$(".thanks-box").hide();
+
 $(".subscribe-btn").click(check_validity);
 
 $(".dismiss-btn").click(function () {

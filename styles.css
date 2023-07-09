@@ -1,0 +1,382 @@
+html,
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #36384d;
+  z-index: 0;
+  font-family: "Roboto", sans-serif;
+}
+html p,
+body p {
+  font-weight: 300;
+}
+html h1,
+body h1 {
+  font-weight: 700;
+}
+
+.main-container {
+  height: 550px;
+  width: 800px;
+  border-radius: 20px;
+  background-color: white;
+  display: flex;
+  grid-template-columns: repeat(2, 1fr);
+  position: sticky;
+  z-index: 3;
+}
+.main-container .left-container {
+  width: 57%;
+  height: 100%;
+  border-radius: 20px;
+  z-index: 10;
+  background-color: white;
+  justify-content: start;
+  text-align: start;
+  padding-right: 42px;
+  padding-left: 50px;
+}
+.main-container .left-container h1 {
+  margin-top: 50px;
+  font-size: 2.6rem;
+}
+.main-container .left-container p {
+  font-size: 16px;
+}
+.main-container .left-container p i {
+  margin-right: 10px;
+}
+.main-container .left-container .email {
+  font-size: 0.7rem;
+}
+.main-container .left-container .email-validity {
+  color: #de867c;
+}
+.main-container .left-container input {
+  height: 45px;
+  width: 95%;
+  border-radius: 10px;
+  padding-left: 15px;
+  font-size: 16px;
+}
+.main-container .left-container input:hover {
+  cursor: pointer;
+}
+.main-container .left-container button {
+  height: 50px;
+  width: 100%;
+  border-radius: 10px;
+  padding-left: 15px;
+  font-size: 16px;
+  margin-top: 25px;
+  color: #f5f5fd;
+  background-color: #232742;
+}
+.main-container .left-container button:hover {
+  color: #feede5;
+  background: rgb(255, 83, 123);
+  background: linear-gradient(90deg, rgb(255, 83, 123) 21%, rgb(255, 105, 59) 76%);
+  border: 0px;
+  cursor: pointer;
+}
+.main-container .right-container {
+  width: 43%;
+  background: rgb(255, 83, 121);
+  background: linear-gradient(0deg, rgb(255, 83, 121) 21%, rgb(255, 104, 65) 76%);
+  margin: 13px;
+  margin-left: 0;
+  background-color: blue;
+  z-index: 9;
+}
+.main-container .right-container .phone {
+  width: 220px;
+  height: 200px;
+  display: flex;
+  position: sticky;
+  margin-left: -24px;
+  margin-top: 170px;
+  z-index: 2;
+  border: 15px solid black;
+  border-radius: 30px;
+  background: rgb(255, 120, 80);
+  background: linear-gradient(0deg, rgb(255, 120, 80) 21%, rgb(250, 101, 93) 76%);
+}
+.main-container .right-container .phone .up {
+  display: flex;
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  width: 100px;
+  height: 100px;
+  border-radius: 150px 0 0 0;
+  transform: rotate(180deg);
+  background: rgb(255, 103, 98);
+  background: linear-gradient(0deg, rgb(255, 103, 98) 21%, rgb(255, 134, 84) 76%);
+}
+.main-container .right-container .phone .bottom {
+  width: 150px;
+  height: 150px;
+  margin-top: 50px;
+  border-radius: 150px 0 20px 0px;
+  transform: rotate(0deg);
+  background: rgb(245, 143, 93);
+  z-index: 3;
+  position: sticky;
+}
+.main-container .right-container .mac {
+  height: 220px;
+  width: 69.3%;
+  background-color: #f4f4f4;
+  margin-top: -320px;
+  margin-left: 106px;
+  z-index: 4;
+  position: sticky;
+  border-radius: 15px;
+}
+.main-container .right-container .mac .top-mac {
+  display: flex;
+  height: 25px;
+  width: 100%;
+  background-color: black;
+  border-radius: 15px 0 0 0;
+  align-items: center;
+}
+.main-container .right-container .mac .top-mac .red {
+  height: 10px;
+  width: 10px;
+  background-color: #ff5f5e;
+  border-radius: 50%;
+  position: sticky;
+  z-index: 30;
+  margin-left: 15px;
+}
+.main-container .right-container .mac .top-mac .orange {
+  height: 10px;
+  width: 10px;
+  background-color: #ff9350;
+  border-radius: 50%;
+  position: sticky;
+  z-index: 30;
+  margin: 7px;
+}
+.main-container .right-container .mac .top-mac .green {
+  height: 10px;
+  width: 10px;
+  background-color: #6dd4a7;
+  border-radius: 50%;
+  position: sticky;
+  z-index: 30;
+  margin: 0px;
+}
+.main-container .right-container .mac .left-mac {
+  width: 30%;
+  height: 195px;
+  border-radius: 0 0 0 15px;
+  background: rgb(238, 238, 240);
+  background: linear-gradient(0deg, rgb(238, 238, 240) 21%, rgb(206, 209, 234) 76%);
+  margin-top: 0;
+  padding-left: 15px;
+}
+.main-container .right-container .mac .left-mac .line {
+  height: 6px;
+  width: 80%;
+  margin-top: -3px;
+  margin-bottom: 15px;
+  background-color: #c0c1da;
+  position: relative;
+  padding-top: 0px;
+  border-radius: 30px;
+}
+.main-container .right-container .mac .left-mac .almost-full {
+  width: 70%;
+}
+.main-container .right-container .mac .left-mac .half {
+  width: 60%;
+}
+.main-container .right-container .graph {
+  height: 110px;
+  width: 90px;
+  background-color: #ffffff;
+  margin-top: -270px;
+  margin-left: 220px;
+  position: sticky;
+  z-index: 4;
+  padding-top: 20px;
+  padding-bottom: -20px;
+}
+.main-container .right-container .graph .the-big {
+  height: 5px;
+  width: 40%;
+  margin-top: 50px;
+  margin-bottom: 15px;
+  display: flex;
+  position: relative;
+  padding-top: 0px;
+  border-radius: 30px;
+  background-color: #ff804f;
+  transform: rotate(-45deg);
+}
+.main-container .right-container .graph .the-small {
+  height: 5px;
+  width: 20%;
+  display: flex;
+  position: relative;
+  padding-top: 0px;
+  border-radius: 30px;
+  background-color: #ff804f;
+  transform: rotate(45deg);
+}
+.main-container .right-container .graph .one {
+  margin-left: 69.3%;
+}
+.main-container .right-container .graph .two {
+  margin-left: 61%;
+  margin-top: -14px;
+}
+.main-container .right-container .graph .three {
+  margin-left: 37%;
+  margin-top: -1px;
+  width: 35%;
+}
+.main-container .right-container .graph .four {
+  margin-left: 28%;
+  margin-top: -15.5px;
+}
+.main-container .right-container .graph .five {
+  width: 52%;
+  margin-left: -12%;
+  margin-top: 6px;
+}
+.main-container .right-container .graph .hide {
+  height: 10px;
+  width: 10px;
+  position: sticky;
+  margin-left: 90px;
+  margin-top: -58px;
+  background-color: #000000;
+}
+.main-container .right-container .graph .hide-two {
+  height: 10px;
+  width: 10px;
+  position: sticky;
+  margin-left: -10px;
+  margin-top: 39px;
+  background-color: #f6f6f6;
+}
+.main-container .right-container .nine {
+  height: 140px;
+  width: 85px;
+  background-color: #ffffff;
+  margin-top: 10px;
+  margin-left: 267px;
+  position: sticky;
+  z-index: 30;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-container .right-container .nine .nine-circle {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 10px solid #ff6844;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+}
+.main-container .right-container .nine .white {
+  background-color: #ffffff;
+  width: 5px;
+  height: 35px;
+  margin-left: -5px;
+}
+
+.thanks-box {
+  position: absolute;
+  left: 100px;
+  z-index: 10;
+  height: 300px;
+  width: 300px;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+}
+.thanks-box button {
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  padding-left: 15px;
+  font-size: 16px;
+  margin-top: 5px;
+  color: #f5f5fd;
+  background-color: #232742;
+}
+.thanks-box button:hover {
+  color: #feede5;
+  background: rgb(255, 83, 123);
+  background: linear-gradient(90deg, rgb(255, 83, 123) 21%, rgb(255, 105, 59) 76%);
+  border: 0px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+  .main-container {
+    width: 100%;
+    height: 200%;
+    display: flex;
+    position: absolute;
+    top: 10px;
+    z-index: 0;
+  }
+  .main-container .left-container {
+    position: absolute;
+    bottom: 1px;
+    z-index: 1;
+    width: 81%;
+    height: 50%;
+  }
+  .main-container .right-container {
+    position: absolute;
+    z-index: 2;
+    height: 50%;
+    width: 100%;
+    padding-right: 0;
+    top: 0px;
+    margin-top: 0;
+    border-radius: 20px;
+  }
+  .main-container .right-container .phone {
+    position: relative;
+  }
+  .main-container .right-container .mac {
+    width: 50%;
+    position: relative;
+    margin-left: 50%;
+  }
+  .main-container .right-container .graph {
+    width: 12%;
+    position: relative;
+    margin-left: 70%;
+  }
+  .main-container .right-container .graph .the-big {
+    position: static;
+  }
+  .main-container .right-container .graph .the-small {
+    position: static;
+  }
+  .main-container .right-container .nine {
+    width: 12%;
+    position: relative;
+    margin-left: 80%;
+  }
+  .main-container .right-container .nine .nine-circle {
+    position: relative;
+    margin-left: 0%;
+  }
+  .main-container .right-container .white {
+    display: none;
+  }
+}/*# sourceMappingURL=styles.css.map */
